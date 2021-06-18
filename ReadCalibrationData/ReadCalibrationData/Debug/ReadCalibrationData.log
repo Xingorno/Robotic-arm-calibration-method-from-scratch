@@ -1,0 +1,3 @@
+﻿  main.cpp
+E:\PROGRAM\Project_PhD\Calibration\MyCode\ReadCalibrationData\ReadCalibrationData\main.cpp(10,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  ReadCalibrationData.vcxproj -> E:\PROGRAM\Project_PhD\Calibration\MyCode\ReadCalibrationData\Debug\ReadCalibrationData.exe

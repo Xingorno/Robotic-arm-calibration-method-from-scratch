@@ -1,0 +1,5 @@
+﻿  main.cpp
+E:\PROGRAM\Project_PhD\Calibration\MyCode\LUT_algorithm\LUT_encoder\main.cpp(56,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+E:\PROGRAM\Project_PhD\Calibration\MyCode\LUT_algorithm\LUT_encoder\main.cpp(53): warning C4715: 'LinearInterpolation<2,89>': not all control paths return a value
+E:\PROGRAM\Project_PhD\Calibration\MyCode\LUT_algorithm\LUT_encoder\main.cpp(53): warning C4715: 'LinearInterpolation<2,361>': not all control paths return a value
+  LUT_encoder.vcxproj -> E:\PROGRAM\Project_PhD\Calibration\MyCode\LUT_algorithm\LUT_encoder\Debug\LUT_encoder.exe
