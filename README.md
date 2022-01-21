@@ -1,4 +1,4 @@
-# Local_and_Global Calibration Method (for robotic arms)
+# Local-and-Global Calibration Method (for robotic arms)
 Objective: this method is to help calibrate the robotic arms, which is a general calibration method that can be used to commercial robots and prototype robots.
 
 ## Method
