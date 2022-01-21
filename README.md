@@ -1,5 +1,5 @@
 # Local_and_Global Calibration Method (for robotic arms)
-Objective: this method is to help calibrate the robotic arms, which a general calibration method that can be used to commercial robots and prototype robots
+Objective: this method is to help calibrate the robotic arms, which is a general calibration method that can be used to commercial robots and prototype robots.
 
 ## Method
 - Step 1: If encoders of your robotic arm need to be calibrated firstly, which mostly happens in lab environments, you can use our lookup table method to calibrate your encoders.
