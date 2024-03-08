@@ -1,6 +1,8 @@
 # Local-and-Global Calibration Method (for robotic arms)
-This method is to calibrate the robotic arms. Our approach is a generic calibration method, which can be used for both commercial robots and prototype robots. This figure (please see below) shows our developed robotic 3D ultrasound system. If the architecture of your system is different from ours, please see below to learn how to modify the code to adapt to your system.
+This method is to calibrate the robotic arms. Our approach is a generic calibration method, which can be used for both commercial robots and prototype robots. This figure (please see below) shows our developed robotic 3D ultrasound system. If the architecture of your system is different from ours, please see below to learn how to modify the code to adapt to your system. This [paper](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12034/1203413/A-2D-3D-US-CT-guided-system-for-percutaneous-focal/10.1117/12.2612085.full?webSyncID=a0ce46e9-e6ec-7a49-dab6-a0cbad059329&sessionGUID=ad883c9d-902b-c999-3ced-268bead49a28) includes the details about this calibration approach. 
 
+
+<p align="center"><img src="imgs/2021_SPIE_P2_3.png" width="700px"/></p>
 
 # Citation
 If you want to use our code for your research, please cite our code.
@@ -27,7 +29,7 @@ Our way is kind of time-consuming. (If you or your lab doesn't use decent encode
 - LookupTable.m. This file is to achieve step 1 of the workflow. Most systems will not need this step. 
 - ./Data. This folder includes some of our collected data, which you can use to have a quick test of our code.
 - ./Gyn_system. This folder is for another robotic arm, which can be helpful for you to learn how to modify the code to adapt to your robotic arms.
-- 
+
 ## Configuration
 - Matlab. The version is quite flexible. We used Matlab 2023b to develop.
 - [NDI Polaris](https://www.ndigital.com/optical-navigation-technology/polaris-vega-vt/) Optical tracking system. You can use other precise measuring systems to get the ground truth data as well.
