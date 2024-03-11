@@ -5,7 +5,7 @@ This method is to calibrate the robotic arms. Our approach is a generic calibrat
 <p align="center"><img src="imgs/2021_SPIE_P2_3.png" width="700px"/></p>
 
 # Citation
-If you want to use our code for your research, please cite our code.
+If you want to use our code for your research, please cite our publication.
 ```
 @inproceedings{xing20222d,
   title={A 2D/3D US/CT-guided system for percutaneous focal liver thermal ablation},
