@@ -29,6 +29,7 @@ Our way is kind of time-consuming. (If you or your lab doesn't use decent encode
 - LookupTable.m. This file is to achieve step 1 of the workflow. Most systems will not need this step. 
 - ./Data. This folder includes some of our collected data, which you can use to have a quick test of our code.
 - ./Gyn_system. This folder is for another robotic arm, which can be helpful for you to learn how to modify the code to adapt to your robotic arms.
+- ./ReadCalibrationData. This folder includes the code to convert the raw data (acquired from NDI polaris and arm encoders) to the formatted data that can be used for LiverSystemCalibration_V1/2.m. This folder includes two different versions (C++ and matlab). The user can choose either one to achieve the same results.
 
 ## Configuration
 - Matlab. The version is quite flexible. We used Matlab 2023b to develop.
