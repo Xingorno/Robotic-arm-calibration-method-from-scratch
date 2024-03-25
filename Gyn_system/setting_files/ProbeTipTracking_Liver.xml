@@ -1,0 +1,54 @@
+<PlusConfiguration version="2.1"> 
+ 
+  <DataCollection StartupDelaySec="1.0">
+    <DeviceSet 
+	Name="Printed probe with tip: For Mechanical Arm Calibration" 
+    Description="Printed probe with passive reflective spheres for optical tracking" />
+    
+   <Device
+      Id="TrackerDevice"
+      Type="PolarisTracker"
+      ToolReferenceFrame="Reference" >
+      <DataSources>
+        <DataSource Type="Tool" Id="Probe" RomFile="NdiToolDefinitions/8700449_pivoted_new.rom"  /> <!-- change it when have final desings-->
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="channel" >
+          <DataSource Id="Probe"/>
+        </OutputChannel>
+      </OutputChannels>
+    </Device>
+
+    <Device 
+	Id="CaptureDevice" 
+    Type="VirtualCapture" 
+    BaseFilename="myRecordingTest.nrrd" 
+    EnableFileCompression="TRUE" 
+    EnableCapturingOnStart="FALSE">
+      <InputChannels>
+        <InputChannel Id="channel" />
+      </InputChannels>
+    </Device> <!--END OD DEVICES DECLARATION-->
+               
+               
+ </DataCollection>
+
+  
+  <!-- What is send to 3D slicer. port usully is 18944 but could be another, check in slicer-->
+    <PlusOpenIGTLinkServer
+    MaxNumberOfIgtlMessagesToSend="1"
+    MaxTimeSpentWithProcessingMs="50"
+    ListeningPort="18944"
+    DefaultClientSendTimeoutSec="0"
+    SendValidTransformsOnly="true"
+    OutputChannelId="channel">
+    <DefaultClientInfo> 
+      <MessageTypes> 
+        <Message Type="TRANSFORM" />
+      </MessageTypes>
+      <TransformNames>
+        <Transform Name="ProbeToReference" />
+      </TransformNames>
+    </DefaultClientInfo>
+  </PlusOpenIGTLinkServer>
+</PlusConfiguration> 
